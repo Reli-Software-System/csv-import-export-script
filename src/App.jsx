@@ -11,6 +11,7 @@ const App = () => {
 				const text = await readFile(file);
 				const parsedData = parseCSV(text);
 				setCsvData(parsedData);
+				console.log(parsedData);
 			} catch (error) {
 				console.error("Error reading or parsing the CSV file:", error);
 			}
