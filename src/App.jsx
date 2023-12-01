@@ -12,6 +12,7 @@ const App = () => {
 				const parsedData = parseCSV(text);
 				setCsvData(parsedData);
 				console.log(parsedData);
+				// TODO: handle uploading to backend here
 			} catch (error) {
 				console.error("Error reading or parsing the CSV file:", error);
 			}
